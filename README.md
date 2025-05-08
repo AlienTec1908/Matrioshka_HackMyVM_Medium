@@ -1,6 +1,6 @@
 # Matrioshka - HackMyVM - Medium: Writeup
 
-![Matrioshka.png]
+![Matrioshka Banner/Logo](Matrioshka.png)
 
 **Ein detaillierter Walkthrough für die HackMyVM-Maschine "Matrioshka" (Schwierigkeitsgrad: Medium).**
 
