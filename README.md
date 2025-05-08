@@ -3,8 +3,15 @@
 ![Matrioshka Banner/Logo](Matrioshka.png)
 
 **Ein detaillierter Walkthrough für die HackMyVM-Maschine "Matrioshka" (Schwierigkeitsgrad: Medium).**
+ 
+## Über die Maschine
 
----
+*   **Name:** Matrioshka
+*   **Plattform:** HackMyVM
+*   **Schwierigkeitsgrad:** Medium
+*   **Link zur Maschine auf HackMyVM:** (Hier Link zur Maschine auf HMVM einfügen)
+*   **Link zu diesem veröffentlichten Writeup:** [Matrioshka Writeup (GitHub Pages)](https://alientec1908.github.io/Matrioshka_HackMyVM_Medium/)
+*   **Kurzbeschreibung:** Diese Maschine beinhaltet die Ausnutzung von WordPress-Schwachstellen...
 
 ## Inhaltsverzeichnis
 
