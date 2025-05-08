@@ -1,5 +1,3 @@
-# Matrioshka_HackMyVM_Medium
-      
 # Matrioshka - HackMyVM - Medium: Writeup
 
 ![Matrioshka Banner/Logo](./path/to/your/banner_image.png) <!-- Optional: Füge hier einen Pfad zu einem Bild ein, falls du eines hast -->
