@@ -252,4 +252,4 @@ Disclaimer
 Dieses Writeup dient ausschließlich zu Bildungszwecken. Die hier beschriebenen Techniken sollten nur in legalen und autorisierten Umgebungen (wie HackMyVM, CTFs, eigene Testsysteme) angewendet werden. Der Autor übernimmt keine Haftung für Missbrauch.
 
 Autor: DarkSpirit (Dein GitHub Profil-Link)
-Datum des Writeups: (Aktuelles Datum einfügen, z.B. 07. Mai 2024)
+Datum des Writeups: (Aktuelles Datum des Writeups z.B. 07. Mai 2024)
