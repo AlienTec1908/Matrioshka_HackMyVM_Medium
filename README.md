@@ -1,6 +1,6 @@
 # Matrioshka - HackMyVM - Medium: Writeup
 
-![Matrioshka Banner/Logo](./path/to/your/banner_image.png) <!-- Optional: Füge hier einen Pfad zu einem Bild ein, falls du eines hast -->
+![Matrioshka Banner/Logo]([./path/to/your/banner_image.png](https://hackmyvm.eu/img/vm/matrioshka.png))  
 
 **Ein detaillierter Walkthrough für die HackMyVM-Maschine "Matrioshka" (Schwierigkeitsgrad: Medium).**
 
@@ -38,7 +38,7 @@
 *   **Name:** Matrioshka
 *   **Plattform:** HackMyVM
 *   **Schwierigkeitsgrad:** Medium
-*   **Link zur Maschine:** (Hier Link zur Maschine einfügen, falls bekannt)
+*   **Link zur Maschine:** https://hackmyvm.eu/machines/machine.php?vm=Matrioshka
 *   **Kurzbeschreibung:** Diese Maschine beinhaltet die Ausnutzung von WordPress-Schwachstellen für den initialen Zugriff, gefolgt von einer Privilegieneskalation durch Ausnutzung eines falsch konfigurierten Dienstes (HFS) und schließlich einem Docker-Escape, um volle Root-Rechte auf dem Host zu erlangen.
 
 ---
