@@ -1,6 +1,6 @@
 # Matrioshka - HackMyVM - Medium: Writeup
 
-![Matrioshka Banner/Logo]([./path/to/your/banner_image.png](https://hackmyvm.eu/img/vm/matrioshka.png))  
+![Matrioshka Banner/Logo]([./path/to/your/banner_image.png](matrioshka.png))  
 
 **Ein detaillierter Walkthrough für die HackMyVM-Maschine "Matrioshka" (Schwierigkeitsgrad: Medium).**
 
